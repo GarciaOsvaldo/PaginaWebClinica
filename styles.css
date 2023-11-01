@@ -1,0 +1,81 @@
+/* Estilos para el encabezado */
+.sticky-header {
+    background-color: #3498db;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: background-color 0.3s;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.sticky-header h1 {
+    font-size: 36px;
+}
+
+/* Establecer el ancho máximo del logotipo */
+.sticky-header img {
+    max-width: 100%;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Cambio de color en el encabezado al hacer scroll hacia abajo */
+.sticky-header.scrolled {
+    background-color: #2874a6;
+}
+
+/* Estilos para la sección de Promociones y Otra sección */
+#promociones,
+#otra-seccion {
+    margin-top: 80px; /* Agrega espacio para evitar que las secciones se oculten detrás del encabezado */
+    padding: 40px;
+}
+
+#promociones h2,
+#otra-seccion h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.promo-card {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+
+.promo-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.promo-card h3 {
+    font-size: 20px;
+}
+
+.promo-card p {
+    font-size: 16px;
+    margin: 10px 0;
+}
